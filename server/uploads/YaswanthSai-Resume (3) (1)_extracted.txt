@@ -1,0 +1,109 @@
+github | LinkedIn | majjiyaswanthsai17@gmail.com |+91-9691988661
+
+
+
+FUNCTIONAL AREAS
+
+FUNCTIONAL AREAS
+
+	
+
+	
+
+
+
+EDUCATION
+
+EDUCATION
+
+		National Institute of Technology (NIT), Raipur	Aug 2019 – May 2023
+
+	B.Tech, Metallurgical and Materials Engineering (MME)
+
+	Minor: Data science and Machine learning 7.42 CGPA
+
+
+
+TECHNICAL SKILLS
+
+TECHNICAL SKILLS
+
+Power BI: ETL (Extract, Transform, Load), Data Modeling, DAX, KPIs, Reports, and Dashboards
+
+SQL: Joins, Subqueries, Window Functions, PostgreSQL
+
+Python: Pandas, Matplotlib, Seaborn, NumPy, Scikit-learn, Flask, API
+
+Advanced Excel: Pivots, Charts, Lookups, Power Query
+
+Cloud Platforms: Heroku, Docker
+
+
+
+PROJECT EXPERIENCE
+
+PROJECT EXPERIENCE
+
+
+
+ML-Olympiad Nashik Weather Classification Project:Link
+
+
+
+	Developed a Random Forest model achieving 92% accuracy, significantly improving weather prediction reliability.
+
+	Applied SMOTE for class imbalance correction, boosting classification accuracy for minority weather conditions by 30%.
+
+	Conducted extensive EDA and feature engineering, enhancing feature selection and increasing model performance by 20%.
+
+	Built and deployed a Flask API, containerized with Docker and deployed on Heroku, ensuring consistent and scalable deployment.
+
+
+
+Power Bi Projects :Road Accidents Analysis:link, Superstore Sales Dashboard:link ,HR Analytics Dashboard:link ,IPL Stats Dashboard:link
+
+	Executed comprehensive data cleaning, modeling auxiliary tables, and employing advanced statistical techniques to ensure dataset integrity, enable time intelligence functions, and derive new measures for enhanced insights extraction.
+
+	This analysis prompted the development of Key Performance Indicators (KPIs) to effectively monitor essential metrics,Optimized the report using DAX , resulting in a 30% reduction in storage and a 10% performance improvement.
+
+DPDzero Data Loan Portfolio Analysis and Channel Spend Optimization:link
+
+	Segmented Borrowers: Enhanced borrower segmentation led to a 15% reduction in overall risk exposure, allowing for targeted communication strategies and proactive risk management.
+
+	Ticket Size Cohorts: Balanced distribution of borrowers into Low, Medium, and High ticket size cohorts resulted in a 10% decrease in resource spend while maintaining effective borrower engagement.
+
+	Channel Spend Recommendations: Implemented optimized channel spend strategy, resulting in a 20% decrease in communication costs, while achieving a 25% improvement in timely repayments through strategic allocation of resources
+
+
+
+POSITIONS OF RESPONSIBILITY
+
+POSITIONS OF RESPONSIBILITY
+
+SANSKRITI Domain: Event Management, Creatives
+
+	Led a team of 100 volunteers in orchestrating flagship events, demonstrating strong organizational and leadership skills.
+
+
+
+AWARDS & ACHIEVEMENTS
+
+AWARDS & ACHIEVEMENTS
+
+	Secured a position among the Top 10 finalists at Analytica - The Data Analysis Event hosted by NAARM, outperforming 1700 participants.
+
+	SQL- HACKERRANK 5 STAR, SQL 50 BADGE- LEETCODE
+
+	NCC B certification Holder- demonstrating proficiency and exemplified by completion of 3 months of rigorous training
+
+
+
+CERTIFICATIONS
+
+CERTIFICATIONS
+
+	Python Programming - Coursera (University of Michigan)
+
+	Google Data Analytics Professional Certificate - Coursera (Google)
+
+	SQL Masterclass: SQL for Data Analytics - Udemy (Start-Tech Academy)

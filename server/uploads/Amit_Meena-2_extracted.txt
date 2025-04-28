@@ -1,0 +1,58 @@
+Amit Meena
+Email: Amitjf111@gmail.com
+Linkedin
+Mobile:
++91-91663 14168
+Experience
+• Datalabs corp
+Hyderabad, TS
+Data Scientist
+Sep 2023 - Present
+◦Worked on a real-time voice translation application using Twilio, Python, and Google
+Translate, enabling seamless person-to-person communication by automatically translating
+speech between multiple languages over phone conversations.
+◦Developed a SQL-to-visualization application, integrating Langchain, OpenAI, and MySQL,
+seamlessly powered by FastAPI for precise query refinement, insightful plot recommendations,
+and on-the-fly Plotly code generation.
+◦Developed a predictive model for determining optimal insurance policy pricing tailored to
+individual customers, integrating various factors such as personal information, medical history,
+competitor pricing, and more.
+◦Created class-segregated 2D and 3D visualizations, K-means clustering of embedded email
+data, and implemented average pooling with loss metrics for model evaluation.
+◦Collaborated with the team on data analysis, exploring insights, and contributing to
+decision-making processes.
+• Analytics vidhya
+Remote
+Author - Part time
+May 2021 - Present
+◦Authored several blogs and tutorials, including ”A Comprehensive Guide to Reinforcement
+Learning”, ”Differential Equations and Deep Learning”.
+◦Became part of the Creator’s Club after writing articles across diverse Data Science domains,
+gaining access to review courses by Analytics Vidhya and contributing to the platform’s content
+quality.
+◦Continuously updated knowledge in Data Science domains by staying current with the industry
+trends and advancements, ensuring the delivery of relevant and up-to-date content to readers.
+Projects
+• Mathematical model for computer virus transmission — IIT Roorkee : Analyzed and
+compared the model of virus transmission in the human body to that in a computer/network.
+Evaluated and incorporated the mathematical model for antivirus components (SAIR Model).
+• Euler Maruyama Method with Parallel Computing — IIT Roorkee : Implemented the
+method for protein kinetics and population dynamics, utilizing parallel computing for efficient and
+faster computations, leading to improved performance and accuracy in the analysis
+Education
+• Indian Institute of Technology Roorkee (IIT Roorkee)
+Roorkee, UK
+Integrated MSc Applied Mathematics
+July 2017 - May 2022
+Technical Skills
+• Programming Languages : Python, SQL, C++
+• Software Development and Data Science : Data Structures and Algorithms (DSA), Data
+Analytics, Predictive Analytics, Natural language processing (NLP), Deep learning, Unsupervised
+and supervised techniques, Statistical analysis, Data Visualization, Pandas, Scikit-learn, PyTorch,
+OpenAI, Large Language Models (LLM), Langchain, Streamlit, Azure, Fast API, Twilio API
+• Development Tools : Jupyter Notebook, MongoDB, Git, Colab, PyCharm, VS Code, Postman,
+MySQL, Tableau
+Extra Curriculars
+• Member — Football Team, IIT Roorkee
+◦Participated in the college football team, competing in Inter-Bhawan Tournaments.
+

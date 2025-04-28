@@ -1,0 +1,181 @@
+ 
+ 
+ 
+ 
+ 
+360-Degree Feedback Process 
+This document provides a detailed understanding of the 360-degree feedback approach, its 
+purpose, and its implementation. 
+1. What is the 360-Degree Feedback Process? 
+The 360-degree feedback process is a comprehensive evaluation method that collects 
+feedback about an individual's performance from multiple sources. Unlike traditional 
+feedback systems, which rely solely on a supervisor’s perspective, this approach captures 
+input from: 
+• Peers/Colleagues: Team members or collaborators. 
+• Direct Reports: For individuals in managerial or supervisory roles. 
+• Managers/Supervisors: The immediate supervisor or manager. 
+• Self: An individual’s self-assessment. 
+• External Sources: Clients, vendors, or other external partners (if applicable). 
+ 
+2. Why Implement the 360-Degree Feedback Process? 
+• Holistic View: Offers a comprehensive picture of an individual’s performance. 
+• Self-Awareness: Allows individuals to compare self-assessments with feedback from 
+others, highlighting areas for improvement. 
+• Continuous Growth: Supports personal and professional development, fostering a 
+culture of continuous growth. 
+ 
+3. How Does It Work? 
+Step 1: Survey Design 
+Customized feedback forms on the ZOHO platform capture relevant competencies and Key 
+Responsibility Areas (KRAs). 
+Step 2: Peer Selection 
+• Reporting managers nominate a mix of peers to provide feedback. 
+• Employees can also choose peers who have had associations of more than 45 days. 
+• Peer Selection Link: Click here. 
+ 
+ 
+ 
+ 
+ 
+Step 3: Self-Review 
+Employees rate themselves on their KRAs. 
+• Self-Review Form: Access here. 
+• Guide to Self-Review: View guide. 
+Step 4: Peer Review 
+Employees provide feedback for peers they have been selected to review. 
+• Peer-Review Section: Access here. 
+• Guide to Peer Review: View guide. 
+Step 5: Manager Review 
+Managers review performance, learning, and growth of their reportees. 
+• Appraisee View: Access here. 
+• Guide to Manager Review: View guide. 
+ 
+Step 6: Feedback Collection 
+Raters complete feedback forms within a specified timeframe. Anonymity and 
+confidentiality are maintained. 
+Step 7: Results Compilation 
+Feedback from all sources is compiled into a comprehensive report, accessible under the 
+“My Review” section of the performance module on ZOHO. 
+• Viewing Results: Access here. 
+ 
+Step 8: Sharing Feedback & Discussion 
+Managers discuss feedback with employees, focusing on strengths, areas of improvement, 
+and developmental goals. 
+• Guide to Submitting Feedback: View here. 
+ 
+4. Rating Scale and Weightage 
+Rating Scale 
+    
+Rating Parameter  
+Score  
+Criteria  
+ 
+ 
+ 
+ 
+Outstanding  
+4.5 – 5.0  
+Consistently exceeds expectations, delivers exceptional 
+quality, highly innovative, drives significant impact, takes 
+initiative beyond assigned responsibilities, acts as a role 
+model  
+Excellent  
+3.5 – 4.4  
+Regularly meets and occasionally exceeds expectations, 
+delivers high-quality work, shows strong problem-solving 
+skills, takes ownership of tasks, and collaborates effectively 
+with others.  
+Satisfactory  
+2.4 – 3.4  
+Meets expectations with consistency, delivers acceptable 
+quality, completes tasks on time, requires moderate 
+supervision, and shows a willingness to improve.  
+Needs Improvement  
+1.1 – 2.3  
+Occasionally meets expectations but struggles with 
+consistency, needs frequent supervision, makes recurring 
+errors, has difficulty adapting to feedback, and needs 
+coaching for improvement.  
+Unsatisfactory  
+0.0 – 1.0  
+Consistently fails to meet expectations, lacks ownership of 
+tasks, makes frequent and critical errors, requires constant 
+supervision, and shows little or no improvement despite 
+feedback. 
+ 
+Weightage 
+Rating Type 
+Client-Facing Role 
+Non-Client-Facing Role 
+Self 
+20% 
+20% 
+Peer/Reportees 
+20% 
+20% 
+Manager 
+30% 
+60% 
+External Sources 
+30% 
+0% 
+ 
+5. Key Notes 
+• Employees must complete at least 10 weeks in a performance cycle to be included in 
+the 360-degree review process. 
+• Example: Employees with a date of joining after the 10th of February will not be 
+included in the review cycle ending on the 9th of May 2025. 
+ 
+Quarterly Performance Cycles and 360-degree Review Timelines 
+Performance Cycles (2024) 
+Quarterly Review Timelines 
+2nd Monday of Jan – 1st Friday of Apr 24 
+2nd Monday of Apr – 1st Friday of May (14th Apr – 2nd 
+May’25) 
+ 
+ 
+ 
+ 
+3rd Monday of Apr – 2nd Friday of Jul 24 
+1st Monday of Jul – 3rd Friday of Jul (7th Jul – 25th 
+Jul’25) 
+1st Monday of Jul – 2nd Friday of Oct 24 
+3rd Friday of Sep – 2nd Friday of Oct (19th Sep – 10th 
+Oct’25) 
+3rd Monday of Oct – 2nd Friday of Jan 25 
+1st Monday of Dec – 3rd Friday of Dec (8th Dec – 26th 
+Dec) 
+ 
+Timeline & Next Steps for the Current Cycle Process (3rd Monday of Jan – 2nd 
+Friday of Apr) 
+S No. 
+Action Item 
+Timeline 
+1 
+Initiating the Process 
+Apr 14th 
+2 
+Peer Raters' Nomination/Selection Period 
+Apr 14th – Apr 18th 
+3 
+Self-Review & Peer Review 
+Apr 14th – Apr 25th 
+4 
+Manager Review 
+Apr 28th – May 2nd 
+5 
+Performance Team Review and Calibration 
+May 5th – May 9th 
+6 
+Review Published 
+12th May 
+7 
+One-on-One Feedback Discussions with 
+Managers 
+During 1:1 Call in May 
+ 
+Confidentiality Statement 
+This document is confidential and for internal use only. Sharing, copying, or distributing it 
+externally without authorization is prohibited. 
+ 
+

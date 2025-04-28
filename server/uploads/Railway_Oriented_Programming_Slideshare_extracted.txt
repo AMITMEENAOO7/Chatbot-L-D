@@ -1,0 +1,935 @@
+Railway Oriented Programming 
+A functional approach to error handling 
+Scott Wlaschin 
+@ScottWlaschin 
+ 
+fsharpforfunandprofit.com   
+FPbridge.co.uk 
+ 
+ 
+...but OCaml and Haskell 
+are very similar. 
+Examples will be 
+in F#... 
+Overview 
+Topics covered: 
+•
+Happy path programming 
+•
+Straying from the happy path  
+•
+Introducing "Railway Oriented Programming" 
+•
+Using the model in practice 
+•
+Extending and improving the design 
+Happy path programming 
+Implementing a simple use case 
+A simple use case 
+Receive request 
+Validate and canonicalize request 
+Update existing user record 
+ 
+Send verification email 
+Return result to user 
+type Request = {  
+  userId: int;  
+  name: string;  
+  email: string } 
+"As a user I want to update my name and email address" 
+ 
+Imperative code 
+ 
+ 
+string ExecuteUseCase()  
+{  
+  var request = receiveRequest(); 
+  validateRequest(request); 
+  canonicalizeEmail(request); 
+  db.updateDbFromRequest(request); 
+  smtpServer.sendEmail(request.Email); 
+  return "Success"; 
+} 
+Functional flow 
+ 
+ 
+let executeUseCase =  
+  receiveRequest 
+  >> validateRequest 
+  >> canonicalizeEmail 
+  >> updateDbFromRequest 
+  >> sendEmail 
+  >> returnMessage 
+F# left-to-right 
+composition operator 
+Straying from the happy path... 
+What do you do when  
+something goes wrong? 
+Straying from the happy path 
+“A program is a spell cast over a 
+computer, turning input 
+into error messages” 
+Straying from the happy path 
+Name is blank 
+Email not valid 
+Receive request 
+Validate and canonicalize request 
+Update existing user record 
+Send verification email 
+Return result to user 
+User not found 
+Db error 
+Authorization error 
+Timeout 
+"As a user I want to update my name and email address" 
+ 
+type Request = {  
+  userId: int;  
+  name: string;  
+  email: string } 
+- and see sensible error messages when something goes wrong! 
+Imperative code with error cases 
+string ExecuteUseCase()  
+{  
+  var request = receiveRequest(); 
+  var isValidated = validateRequest(request); 
+  if (!isValidated) { 
+     return "Request is not valid" 
+  } 
+  canonicalizeEmail(request); 
+  try { 
+    var result = db.updateDbFromRequest(request); 
+    if (!result) { 
+      return "Customer record not found" 
+    } 
+  } catch { 
+    return "DB error: Customer record not updated" 
+  } 
+ 
+  if (!smtpServer.sendEmail(request.Email)) { 
+    log.Error "Customer email not sent" 
+  } 
+ 
+  return "OK"; 
+} Q: What is the functional equivalent of this code?... and can we preserve the elegance of the original functional version?6 clean lines -> 18 ugly lines. 200% extra! Sadly this is typical of error handling code.
+Request/response (non-functional) design 
+Request 
+Response 
+Validate 
+Update 
+Send 
+Request handling service 
+Request 
+Response 
+Validate 
+Update 
+Send 
+Request handling service 
+Request 
+Errors 
+Response 
+Validate 
+Update 
+Send 
+Request handling service Happy path –without errorsUnhappy path –with errors
+Imperative code can return early 
+Data flow (functional) design 
+Response 
+Validate 
+Update 
+Send 
+A single function representing the use case 
+Request 
+Request 
+Response 
+Validate 
+Update 
+Send 
+A single function representing the use case 
+Request 
+Errors 
+Success 
+Response 
+Validate 
+Update 
+Send 
+Error 
+Response 
+A single function representing the use case Q: How can a function have more than one output?
+Q: How can you bypass downstream 
+functions when an error happens? Happy path –without errors
+Functional design 
+How can a function have more than one output? 
+type Result =  
+    | Success 
+    | ValidationError  
+    | UpdateError  
+    | SmtpError But maybe too specific for this case?I love sum types!
+Functional design 
+How can a function have more than one output? 
+type Result =  
+    | Success 
+    | Failure Much more generic –but no data!
+Functional design 
+How can a function have more than one output? 
+type Result<'TEntity> =  
+    | Success of 'TEntity 
+    | Failure of string  Good for now –we'll revisit this design later.
+Functional design 
+Request 
+Errors 
+Success 
+Validate 
+Update 
+Send 
+Failure 
+A single function representing the use case 
+• Each use case will be equivalent to a single function 
+• The function will return a sum type with two cases:  
+ 
+ 
+"Success" and "Failure". 
+• The use case function will be built from a series of smaller functions, 
+ 
+ 
+each representing one step in a data flow. 
+• The errors from each step will be combined into a single "failure" path. But we haven't answered the question: How can you bypass downstream functions when an error happens?
+How do I work with errors  
+in a functional way? 
+Monad dialog A bear of very little brainVery clever
+v 
+Monads are confusing 
+Railway oriented programming 
+This has absolutely nothing to do with monads. 
+A railway track analogy 
+The Tunnel of 
+Transformation  
+Function 
+pineapple -> apple 
+A railway track analogy 
+Function 1 
+pineapple -> apple 
+Function 2 
+apple -> banana 
+A railway track analogy 
+Function 1 
+pineapple -> apple 
+Function 2 
+apple -> banana 
+>> Composition
+A railway track analogy 
+New Function 3 
+pineapple -> banana New function
+Can't tell it was built from 
+smaller functions! 
+An error generating function 
+Request 
+Success 
+Validate 
+Failure 
+let validateInput input = 
+   if input.name = "" then  
+      Failure "Name must not be blank" 
+   else if input.email = "" then  
+      Failure "Email must not be blank" 
+   else  
+      Success input  // happy path How do we model this as railway track?
+Introducing switches 
+Success! 
+Failure 
+Input -> 
+Connecting switches 
+Validate 
+UpdateDb 
+on success 
+bypass 
+Connecting switches 
+Validate 
+UpdateDb 
+Connecting switches 
+Validate 
+UpdateDb 
+SendEmail 
+Connecting switches 
+Validate 
+UpdateDb 
+SendEmail This is the "two track" model –the basis for the "Railway Oriented Programming" approach to error handling.
+The two-track model in practice 
+Composing switches 
+Validate 
+UpdateDb 
+SendEmail Here we have a series of black box functions that are straddling a two-track railway.
+Composing switches 
+Validate 
+UpdateDb 
+SendEmail Here we have a series of black box functions that are straddling a two-track railway.Inside each box there is a switch function.
+Composing switches 
+Validate 
+UpdateDb 
+SendEmail 
+>> 
+>> 
+Composing one-track functions is fine... 
+Composing switches 
+Validate 
+UpdateDb 
+SendEmail 
+>> 
+>> 
+... and composing two-track functions is fine... 
+Composing switches 
+Validate 
+UpdateDb 
+SendEmail 
+ 
+ 
+... but composing switches is not allowed! 
+Composing switches 
+Validate 
+Two-track input 
+Two-track input 
+Validate 
+One-track input 
+Two-track input Before: Not suitable for compositionAfter: Suitable for compositionSo how can we convert from the "before" case to the "after" case?
+ 
+ 
+Bind as an adapter block 
+Two-track input 
+Slot for switch function 
+Two-track output 
+Bind as an adapter block 
+Two-track input 
+Two-track output 
+Validate 
+Validate 
+Bind as an adapter block 
+Two-track input 
+Two-track output 
+let bind switchFunction =  
+    fun twoTrackInput ->  
+        match twoTrackInput with 
+        | Success s -> switchFunction s 
+        | Failure f -> Failure f 
+bind : ('a -> Result<'b>) -> Result<'a> -> Result<'b> 2-track input2-track outputSwitch function
+Bind as an adapter block 
+Two-track input 
+Two-track output 
+let bind switchFunction twoTrackInput =  
+    match twoTrackInput with 
+    | Success s -> switchFunction s 
+    | Failure f -> Failure f 
+bind : ('a -> Result<'b>) -> Result<'a> -> Result<'b> 2-track input2-track outputSame function: alternative version with two parameters.Switch function
+name50 
+Bind example 
+let nameNotBlank input = 
+  if input.name = "" then  
+     Failure "Name must not be blank" 
+  else Success input 
+ 
+let name50 input = 
+  if input.name.Length > 50 then  
+     Failure "Name must not be longer than 50 chars" 
+  else Success input 
+ 
+let emailNotBlank input = 
+  if input.email = "" then  
+     Failure "Email must not be blank" 
+  else Success input 
+nameNotBlank 
+emailNotBlank 
+Bind example 
+ 
+ 
+       nameNotBlank (combined with)  
+       name50 (combined with)  
+       emailNotBlank 
+ 
+nameNotBlank 
+name50 
+emailNotBlank 
+Bind example 
+ 
+  
+  bind nameNotBlank  
+  bind name50  
+  bind emailNotBlank 
+ use "bind" to convert to 2-track
+nameNotBlank 
+name50 
+emailNotBlank 
+Bind example 
+ 
+ 
+  bind nameNotBlank  
+  >> bind name50  
+  >> bind emailNotBlank 
+ then compose together
+nameNotBlank 
+name50 
+emailNotBlank 
+Bind example 
+ 
+let validateRequest =  
+  bind nameNotBlank  
+  >> bind name50  
+  >> bind emailNotBlank 
+ 
+ 
+ 
+// validateRequest : Result<Request> -> Result<Request> Define a functionOverall result is a new two-track function
+validateRequest 
+Bind example 
+let (>>=) twoTrackInput switchFunction =  
+  bind switchFunction twoTrackInput 
+ 
+let validateRequest twoTrackInput =  
+  twoTrackInput  
+  >>= nameNotBlank  
+  >>= name50  
+  >>= emailNotBlank 
+ Needs a explicit parameterCommon symbol for bind
+validateRequest Bind symbol = F# composition symbol + railway track symbol! Coincidence?
+Bind doesn't stop transformations 
+FunctionB 
+type Result<'TEntity> =  
+  | Success of 'TEntity 
+  | Failure of string Note that bind is about shape. Transformations can still happen.TEntity= BananaTEntity= PineappleTEntity= Apple
+FunctionA 
+Composing switches - review 
+Validate 
+UpdateDb 
+SendEmail Converted to two-track functions using bind
+Validate 
+UpdateDb 
+SendEmail 
+Comic Interlude 
+What do you call a 
+train that eats toffee? 
+I don't know, what do you 
+call a train that eats toffee?  
+ A chew, 
+chew train!  
+More fun with railway tracks... 
+...extending the framework 
+More fun with railway tracks... 
+Fitting other functions into this framework: 
+ 
+• Single track functions 
+• Dead-end functions 
+• Functions that throw exceptions 
+• Supervisory functions 
+ 
+ 
+ 
+ 
+Converting one-track functions 
+Fitting other functions into this framework: 
+ 
+• Single track functions 
+• Dead-end functions 
+• Functions that throw exceptions 
+• Supervisory functions 
+ 
+ 
+ 
+ 
+Converting one-track functions 
+// trim spaces and lowercase 
+let canonicalizeEmail input = 
+   { input with email = input.email.Trim().ToLower() } 
+canonicalizeEmail A simple function that doesn't generate errors –a "one-track" function.
+Converting one-track functions 
+UpdateDb 
+SendEmail 
+Validate 
+canonicalizeEmail 
+ 
+Won't compose 
+Converting one-track functions 
+Two-track input 
+Slot for one-track function 
+Two-track output 
+Converting one-track functions 
+Two-track input 
+Two-track output 
+Canonicalize 
+Canonicalize 
+Converting one-track functions 
+Two-track input 
+Two-track output 
+let map singleTrackFunction twoTrackInput =  
+  match twoTrackInput with 
+  | Success s -> Success (singleTrackFunction s) 
+  | Failure f -> Failure f 
+map : ('a -> 'b) -> Result<'a> -> Result<'b> 2-track input2-track output
+Single track 
+function 
+Converting one-track functions 
+Two-track input 
+Two-track output 
+let map singleTrackFunction =  
+  bind (singleTrackFunction >> Success) 
+ 
+map : ('a -> 'b) -> Result<'a> -> Result<'b> 2-track input2-track outputTip: "map" can also be built from "bind" and "Success"
+Single track 
+function 
+Converting one-track functions 
+UpdateDb 
+SendEmail 
+Validate 
+canonicalizeEmail 
+ 
+Will compose 
+Converting dead-end functions 
+Fitting other functions into this framework: 
+ 
+• Single track functions 
+• Dead-end functions 
+• Functions that throw exceptions 
+• Supervisory functions 
+ 
+ 
+ 
+ 
+Converting dead-end functions 
+let updateDb request = 
+    // do something 
+    // return nothing at all 
+updateDb No outputA function that doesn't return anything–a "dead-end" function.
+Converting dead-end functions 
+SendEmail 
+Validate 
+UpdateDb 
+ 
+Won't compose 
+Converting dead-end functions 
+One-track input 
+Slot for dead end function 
+One-track output 
+Converting dead-end functions 
+One-track input 
+One-track output 
+let tee deadEndFunction oneTrackInput =  
+    deadEndFunction oneTrackInput  
+    oneTrackInput  
+tee : ('a -> unit) -> 'a -> 'a 
+Dead end 
+function one-track inputone-track output
+Converting dead-end functions 
+SendEmail 
+Validate 
+UpdateDb 
+ 
+Will compose 
+Functions that throw exceptions 
+Fitting other functions into this framework: 
+ 
+• Single track functions 
+• Dead-end functions 
+• Functions that throw exceptions 
+• Supervisory functions 
+ 
+ 
+ 
+ Especially to wrap an I/O call
+Functions that throw exceptions 
+One-track input 
+Two-track output 
+SendEmail 
+SendEmail 
+Add try/catch to 
+handle timeouts, say 
+Looks innocent, but might 
+throw an exception Don't bother handling all possible exceptions: E.g. FileNotFound, yes.OutOfMemory, no.
+Functions that throw exceptions 
+Even Yoda recommends 
+not to use exception 
+handling for control flow: 
+ 
+Guideline: Convert exceptions into Failures 
+"Do or do not, there is 
+no try". 
+Supervisory functions 
+Fitting other functions into this framework: 
+ 
+• Single track functions 
+• Dead-end functions 
+• Functions that throw exceptions 
+• Supervisory functions 
+ 
+ 
+ 
+ For when you need to handle *both* tracks –e.g. tracing, logging, etc.
+Supervisory functions 
+Two-track input 
+Two-track output 
+Slot for one-track function for 
+Success case 
+Slot for one-track function for 
+Failure case 
+Putting it all together 
+Putting it all together 
+Validate 
+UpdateDb 
+SendEmail 
+Canonicalize 
+Input 
+Output?? your browser doesn't understand two-track types!
+Putting it all together 
+Validate 
+UpdateDb 
+SendEmail 
+Canonicalize 
+returnMessage 
+Input 
+Output 
+let returnMessage result =  
+  match result with 
+  | Success _ -> "Success" 
+  | Failure msg -> msg 
+Putting it all together - review 
+Summary:  The "two-track" framework is a useful 
+approach for most use-cases. 
+ 
+You can fit most functions into 
+this model. Not a solution for everything, but a good starting point.
+Putting it all together - review 
+The "two-track" framework is a useful approach for 
+most use-cases. 
+ 
+let executeUseCase =  
+  receiveRequest 
+  >> validateRequest 
+  >> updateDbFromRequest 
+  >> sendEmail 
+  >> returnMessage Before –without error handling
+let executeUseCase =  
+  receiveRequest 
+  >> validateRequest  
+  >> updateDbFromRequest 
+  >> sendEmail 
+  >> returnMessage After –with error handling
+Let's look at the code -- before and after adding error handling Still clean and elegant
+Comic Interlude 
+Why can't a steam 
+locomotive sit down? 
+I don't know,  
+why can't a steam 
+locomotive sit down? 
+Because it 
+has a tender 
+behind!  
+Designing for errors 
+Unhappy paths are requirements too 
+Designing for errors 
+let validateInput input = 
+   if input.name = "" then  
+      Failure "Name must not be blank" 
+   else if input.email = "" then  
+      Failure "Email must not be blank" 
+   else  
+      Success input  // happy path 
+ 
+type Result<'TEntity> =  
+  | Success of 'TEntity 
+  | Failure of string 
+Using strings is not good 
+Designing for errors 
+let validateInput input = 
+   if input.name = "" then  
+      Failure NameMustNotBeBlank 
+   else if input.email = "" then  
+      Failure EmailMustNotBeBlank 
+   else  
+      Success input  // happy path 
+ 
+type Result<'TEntity> =  
+  | Success of 'TEntity 
+  | Failure of ErrorMessage 
+type ErrorMessage =  
+  | NameMustNotBeBlank 
+  | EmailMustNotBeBlank 
+Special type rather 
+than string 
+Designing for errors 
+let validateInput input = 
+   if input.name = "" then  
+      Failure NameMustNotBeBlank 
+   else if input.email = "" then  
+      Failure EmailMustNotBeBlank 
+   else if (input.email doesn't match regex) then  
+      Failure EmailNotValid input.email 
+   else  
+      Success input  // happy path 
+ 
+type ErrorMessage =  
+  | NameMustNotBeBlank 
+  | EmailMustNotBeBlank 
+  | EmailNotValid of EmailAddress 
+Add invalid 
+email as data 
+Designing for errors 
+type ErrorMessage =  
+  | NameMustNotBeBlank 
+  | EmailMustNotBeBlank 
+  | EmailNotValid of EmailAddress 
+  // database errors 
+  | UserIdNotValid of UserId 
+  | DbUserNotFoundError of UserId 
+  | DbTimeout of ConnectionString 
+  | DbConcurrencyError 
+  | DbAuthorizationError of ConnectionString * Credentials 
+  // SMTP errors 
+  | SmtpTimeout of SmtpConnection 
+  | SmtpBadRecipient of EmailAddress 
+Documentation of everything 
+that can go wrong -- 
+And it's type-safe 
+documentation that can't go 
+out of date! Also triggers important DDD conversations 
+Designing for errors – service boundaries 
+Translation function needed 
+at a service boundary 
+type DbErrorMessage<'PK> =  
+  | PrimaryKeyNotValid of 'PK 
+  | RecordNotFoundError of 'PK 
+  | DbTimeout of ConnectionString * TimeoutMs 
+  | DbConcurrencyError 
+  | DbAuthorizationError of Credentials Generic database errors
+type MyUseCaseError =  
+  | NameMustNotBeBlank 
+  | EmailMustNotBeBlank 
+  | EmailNotValid of EmailAddress 
+  // database errors 
+  | UserIdNotValid of UserId 
+  | DbUserNotFoundError of UserId 
+  | DbTimeout of ConnectionString 
+  | DbConcurrencyError 
+  | DbAuthorizationError of Credentials 
+  // SMTP errors 
+  | SmtpTimeout of SmtpConnection 
+  | SmtpBadRecipient of EmailAddress Specific errors for this use-case
+let dbResultToMyResult dbError =  
+  match dbError with 
+  | DbErrorMessage.PrimaryKeyNotValid id -> 
+     MyUseCaseError.UserIdNotValid id 
+  | DbErrorMessage.RecordNotFoundError id -> 
+     MyUseCaseError.DbUserNotFoundError id 
+  | _  -> // etc 
+Designing for errors – converting to strings 
+No longer works – each case must now 
+be explicitly converted to a string 
+returnMessage 
+let returnMessage result =  
+  match result with 
+  | Success _ -> "Success" 
+  | Failure msg -> msg 
+Designing for errors – converting to strings 
+let returnMessage result =  
+  match result with 
+  | Success _ -> "Success" 
+  | Failure err ->  
+      match err with 
+      | NameMustNotBeBlank -> "Name must not be blank"  
+      | EmailMustNotBeBlank -> "Email must not be blank"  
+      | EmailNotValid (EmailAddress email) ->  
+            sprintf "Email %s is not valid" email 
+ 
+      // database errors 
+      | UserIdNotValid (UserId id) -> 
+            sprintf "User id %i is not a valid user id" id 
+      | DbUserNotFoundError (UserId id) -> 
+            sprintf "User id %i was not found in the database" id 
+      | DbTimeout (_,TimeoutMs ms) -> 
+            sprintf "Could not connect to database within %i ms" ms 
+      | DbConcurrencyError ->  
+            sprintf "Another user has modified the record. Please resubmit"  
+      | DbAuthorizationError _ -> 
+            sprintf "You do not have permission to access the database"  
+ 
+      // SMTP errors 
+      | SmtpTimeout (_,TimeoutMs ms) -> 
+            sprintf "Could not connect to SMTP server within %i ms" ms 
+      | SmtpBadRecipient (EmailAddress email) -> 
+            sprintf "The email %s is not a valid recipient" email 
+Each case must be converted to a 
+string – but this is only needed 
+once, and only at the last step. 
+All strings are in one place, 
+so translations are easier. Different conversions can be used depending on the target. E.g. user messages vs. logging.
+returnMessage 
+(or use resource file) 
+Parallel tracks 
+Parallel validation 
+nameNotBlank 
+name50 
+emailNotBlank 
+Problem: Validation done in series. 
+So only one error at a time is returned It would be nice to return all validation errors at once.
+Parallel validation 
+nameNotBlank 
+name50 
+emailNotBlank 
+Split 
+input 
+Combine 
+output 
+Now we do get all 
+errors at once! 
+... But how to combine? 
+Combining switches 
++ 
+Trick: if we create an operation that combines pairs 
+into a new switch, we can repeat to combine as many 
+switches as we like. 
+Combining switches 
++ 
++ 
+Trick: if we create an operation that combines pairs 
+into a new switch, we can repeat to combine as many 
+switches as we like. -> For more, see "monoidswithout tears"
+Combining switches 
++ 
+Success (S2) Failure (F2) 
+Success (S1) S1 or S2 
+F2 
+Failure (F1) 
+F1 
+[F1; F2] A failure in either one is a overall failure.
+Combining switches 
++ 
+Success (S2) Failure (F2) 
+Success (S1) S1 or S2 
+F2 
+Failure (F1) 
+F1 
+[F1; F2] 
+Either input is OK, they 
+are both the same value 
+Combining switches 
++ 
+Success (S2) Failure (F2) 
+Success (S1) S1 or S2 
+F2 
+Failure (F1) 
+F1 
+[F1; F2] We need to keep both, so store in a list.
+type Result<'TEntity> =  
+    | Success of 'TEntity 
+    | Failure of ErrorMessage list 
+Combining switches 
++ 
+Success (S2) Failure (F2) 
+Success (S1) S1 or S2 
+[F2] 
+Failure (F1) 
+[F1] 
+[F1; F2] But now these need to be lists too.
+type Result<'TEntity> =  
+    | Success of 'TEntity 
+    | Failure of ErrorMessage list 
+Handling lists of errors 
+let errToString err =  
+  match err with 
+  | NameMustNotBeBlank -> "Name must not be blank"  
+  | EmailMustNotBeBlank -> "Email must not be blank"  
+  // etc 
+returnMessage 
+Collapse a list of strings 
+into a single string 
+Convert all messages to 
+strings 
+let returnMessage result =  
+  match result with 
+  | Success _ -> "Success" 
+  | Failure errs ->  
+      errs  
+      |> List.map errToString 
+      |> List.reduce (fun s1 s2 -> s1 + ";" + s2) 
+Domain events 
+Communicating information to 
+downstream functions 
+Events are not errors 
+Validate 
+UpdateDb 
+SendEmail Communicate new information to downstream processes without being a failure
+Tell CRM that 
+email was sent 
+Events are not errors 
+Validate 
+UpdateDb 
+SendEmail 
+Tell CRM that 
+email was sent 
+type MyUseCaseMessage =  
+  | NameMustNotBeBlank 
+  | EmailMustNotBeBlank 
+  | EmailNotValid of EmailAddress 
+  // database errors 
+  | UserIdNotValid of UserId 
+  // SMTP errors 
+  | SmtpTimeout of SmtpConnection 
+  // Domain events 
+  | UserSaved of AuditInfo 
+  | EmailSent of EmailAddress * MsgId Add domain events to the choicesCommunicate new information to downstream processes without being a failure
+Events are not errors 
+Validate 
+UpdateDb 
+SendEmail 
+Tell CRM that 
+email was sent 
+type MyUseCaseMessage =  
+  | NameMustNotBeBlank 
+  | EmailMustNotBeBlank 
+  | EmailNotValid of EmailAddress 
+  // database errors 
+  | UserIdNotValid of UserId 
+  // SMTP errors 
+  | SmtpTimeout of SmtpConnection 
+  // Domain events 
+  | UserSaved of AuditInfo 
+  | EmailSent of EmailAddress * MsgId Add domain events to the choices
+type Result<'TEntity> =  
+    | Success of 'TEntity * Message list 
+    | Failure of Message list Store a list of events (as well as the entity) on the Success pathCommunicate new information to downstream processes without being a failure
+Comic Interlude 
+Why can't a train 
+driver be electrocuted? 
+I don't know,  
+why can't a train driver 
+be electrocuted? 
+Because he's not 
+a conductor!  
+Summary 
+A recipe for handling errors in a 
+functional way 
+Recipe for handling errors in a functional way 
+type Result<'TEntity> =  
+    | Success of 'TEntity * Message list 
+    | Failure of Message list Step 1: Create a Result typeStep 2: Use "bind" to convert switches to two-track functions
+Validate 
+UpdateDb 
+SendEmail Step 3: Use composition to glue the two-track functions together
+type Message =  
+  | NameMustNotBeBlank 
+  | EmailMustNotBeBlank 
+  | EmailNotValid of EmailAddress Step 4: Make error cases first class citizens
+Some topics not covered... 
+... but could be handled  
+in an obvious way. 
+Topics not covered 
+• Async on success path (instead of sync) 
+• Compensating transactions 
+(instead of two phase commit) 
+• Logging (tracing, app events, etc.) 
+I don’t always have errors... 
+I don’t always have errors... 
+Railway Oriented Programming 
+ 
+@ScottWlaschin 
+ 
+fsharpforfunandprofit.com   
+FPbridge.co.uk 
+ 
+ Let me know if you need help with F#Railway Oriented ProgrammingSlides will be available here & code too./rop
+

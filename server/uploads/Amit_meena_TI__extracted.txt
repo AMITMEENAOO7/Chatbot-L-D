@@ -1,0 +1,182 @@
+ 
+ 
+ 
+Amit Meena 
+Dev Trainee 
+ 
+SUMMARY: 
+• 
+AI-Driven Development: Skilled in Generative AI and LLMs, building intelligent and scalable 
+applications. 
+• 
+Full-Stack Proficiency: Skilled in MERN stack, Python for high-performance solutions. 
+• 
+Backend & Database Expertise: Experience with MongoDB, PostgreSQL, Firebase and API 
+development for seamless data management. 
+• 
+Frontend Development: Worked with React.js, TypeScript to create dynamic UIs. 
+• 
+Cloud & Integration: Hands-on experience with Azure, FastAPI, Twilio API, and OpenAI, 
+integrating AI-driven functionalities. 
+ 
+ 
+TECHNICAL SKILLS: 
+• 
+Programming Languages: Python, JavaScript, TypeScript, SQL, 
+• 
+Web Services: React.js, Node.js, Express.js, FastAPI, Flask 
+• 
+Databases: MongoDB, PostgreSQL, Firebase 
+• 
+Version Control: GIT, BitBucket 
+• 
+Development Tools: Postman, Jupyter Notebook, PyCharm, VS Code, Colab 
+• 
+Cloud & AI Technologies: OpenAI, Langchain, Streamlit, Twilio API, Azure 
+ 
+ 
+STRENGTHS: 
+(DERIVED FROM GALLUP CLIFTON STRENGTHS ASSESSMENT) 
+● 
+Significance: Driven by the desire to make a meaningful impact, prioritizing projects based 
+on their influence on the organization or those around them. Independence and high standards 
+guide decision-making. 
+● 
+Achiever: Possesses a strong work ethic and stamina, finding deep satisfaction in staying 
+busy and productive while consistently pushing towards goals. 
+● 
+Relator: Values close relationships and thrives in collaborative environments, gaining 
+fulfillment from working hard alongside trusted peers to accomplish shared objectives. 
+● 
+Analytical: Approaches situations with a focus on logic and reasoning, carefully evaluating 
+all factors that could influence an outcome to make informed decisions. 
+● 
+Competition: Motivated by the challenge of outperforming others, continuously striving 
+for excellence and finding energy in contests and ranking progress against peers 
+ 
+ 
+ 
+ 
+ 
+ 
+PROFESSIONAL EXPERIENCE (1 YEAR): 
+• 
+Real-Time Communication Platform (Datalabs AI, Hyderabad) 
+o 
+Backend & Frontend: Developed a MERN stack platform with live updates, integrating 
+Azure speech-to-text, translation, and text-to-speech for real-time communication. 
+• 
+API Automation Testing (Datalabs AI, Hyderabad) 
+o 
+Backend & Frontend: Built an API automation testing web application using React and 
+Python, leveraging OpenAI for automated test case generation. 
+• 
+SQL-to-Visualization Tool (Datalabs AI, Hyderabad) 
+o 
+Backend: Implemented a data visualization tool using Langchain and FastAPI, enabling 
+dynamic query refinement for improved analytics. 
+ 
+Education 
+Indian Institute of Technology Roorkee (IIT Roorkee) 
+• 
+Integrated MSc in Applied Mathematics (July 2017 – May 2022) 
+ 
+Hobbies & Interests 
+• 
+Football: Member of IIT Roorkee’s Football Team, competed in Inter-Bhawan tournaments. 
+• 
+Other Interests: Traveling, Cricket, Boxing, Movies. 
+ 
+ 
+
+ 
+ 
+ 
+Amit Meena 
+Dev Trainee 
+ 
+SUMMARY: 
+• 
+AI-Driven Development: Skilled in Generative AI and LLMs, building intelligent and scalable 
+applications. 
+• 
+Full-Stack Proficiency: Skilled in MERN stack, Python for high-performance solutions. 
+• 
+Backend & Database Expertise: Experience with MongoDB, PostgreSQL, Firebase and API 
+development for seamless data management. 
+• 
+Frontend Development: Worked with React.js, TypeScript to create dynamic UIs. 
+• 
+Cloud & Integration: Hands-on experience with Azure, FastAPI, Twilio API, and OpenAI, 
+integrating AI-driven functionalities. 
+ 
+ 
+TECHNICAL SKILLS: 
+• 
+Programming Languages: Python, JavaScript, TypeScript, SQL, 
+• 
+Web Services: React.js, Node.js, Express.js, FastAPI, Flask 
+• 
+Databases: MongoDB, PostgreSQL, Firebase 
+• 
+Version Control: GIT, BitBucket 
+• 
+Development Tools: Postman, Jupyter Notebook, PyCharm, VS Code, Colab 
+• 
+Cloud & AI Technologies: OpenAI, Langchain, Streamlit, Twilio API, Azure 
+ 
+ 
+STRENGTHS: 
+(DERIVED FROM GALLUP CLIFTON STRENGTHS ASSESSMENT) 
+● 
+Significance: Driven by the desire to make a meaningful impact, prioritizing projects based 
+on their influence on the organization or those around them. Independence and high standards 
+guide decision-making. 
+● 
+Achiever: Possesses a strong work ethic and stamina, finding deep satisfaction in staying 
+busy and productive while consistently pushing towards goals. 
+● 
+Relator: Values close relationships and thrives in collaborative environments, gaining 
+fulfillment from working hard alongside trusted peers to accomplish shared objectives. 
+● 
+Analytical: Approaches situations with a focus on logic and reasoning, carefully evaluating 
+all factors that could influence an outcome to make informed decisions. 
+● 
+Competition: Motivated by the challenge of outperforming others, continuously striving 
+for excellence and finding energy in contests and ranking progress against peers 
+ 
+ 
+ 
+ 
+ 
+ 
+PROFESSIONAL EXPERIENCE (1 YEAR): 
+• 
+Real-Time Communication Platform (Datalabs AI, Hyderabad) 
+o 
+Backend & Frontend: Developed a MERN stack platform with live updates, integrating 
+Azure speech-to-text, translation, and text-to-speech for real-time communication. 
+• 
+API Automation Testing (Datalabs AI, Hyderabad) 
+o 
+Backend & Frontend: Built an API automation testing web application using React and 
+Python, leveraging OpenAI for automated test case generation. 
+• 
+SQL-to-Visualization Tool (Datalabs AI, Hyderabad) 
+o 
+Backend: Implemented a data visualization tool using Langchain and FastAPI, enabling 
+dynamic query refinement for improved analytics. 
+ 
+Education 
+Indian Institute of Technology Roorkee (IIT Roorkee) 
+• 
+Integrated MSc in Applied Mathematics (July 2017 – May 2022) 
+ 
+Hobbies & Interests 
+• 
+Football: Member of IIT Roorkee’s Football Team, competed in Inter-Bhawan tournaments. 
+• 
+Other Interests: Traveling, Cricket, Boxing, Movies. 
+ 
+ 
+

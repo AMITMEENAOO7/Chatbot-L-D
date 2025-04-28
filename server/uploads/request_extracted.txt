@@ -1,0 +1,99 @@
+1. What is the primary purpose of Retrieval Augmented Generation (RAG)? 
+A) To reduce the size of language models 
+B) To enhance language models with external knowledge for more accurate responses 
+C) To replace language models with retrieval systems 
+D) To improve the speed of language model training 
+Answer:  
+2. Which component is responsible for creating and maintaining the knowledge base 
+in a RAG system? 
+A) Generation Pipeline 
+B) Indexing Pipeline 
+C) Retrieval Module 
+D) Augmentation Module 
+Answer:  
+3. What are the main stages of the Generation Pipeline in a RAG system? 
+A) Data Loading, Text Splitting, Embedding 
+B) Retrieval, Augmentation, Generation 
+C) Indexing, Querying, Responding 
+D) Training, Fine-tuning, Deploying 
+Answer:  
+4. In the context of RAG, what is the purpose of the Augmentation step? 
+A) To train the language model with new data 
+B) To combine retrieved information with the user query 
+C) To evaluate the accuracy of the generated response 
+D) To store data in the knowledge base 
+Answer:  
+5. Which of the following is a limitation of the Naïve RAG approach? 
+A) High computational cost 
+B) Low precision in retrieval leading to irrelevant information 
+C) Inability to handle multimodal data 
+D) Overfitting to training data 
+Answer:  
+6. What is a key benefit of using advanced RAG strategies over the Naïve approach? 
+A) Simplified system architecture 
+B) Reduced need for external data sources 
+C) Improved retrieval accuracy and relevance 
+D) Elimination of the retrieval component 
+Answer:  
+7. What does the term 'Modular RAG' refer to? 
+A) A RAG system that operates without a language model 
+B) A RAG system with interchangeable components for flexibility 
+C) A simplified version of RAG with fewer components 
+D) A RAG system designed specifically for modular arithmetic problems 
+Answer:  
+ 
+8. Which of the following is NOT a stage in the Indexing Pipeline? 
+A) Data Loading 
+B) Text Splitting 
+C) Embedding Creation 
+D) Response Generation 
+Answer:  
+9. How does RAG address the issue of language model hallucinations? 
+A) By reducing the model's training data 
+B) By incorporating external, factual information during response generation 
+C) By simplifying the model architecture 
+D) By increasing the model's parameters 
+Answer:  
+ 
+10. What role does the Retrieval Coordination component play in a RAG system? 
+A) It generates responses based on user queries 
+B) It selects the appropriate retrieval method based on the input query 
+C) It stores the retrieved information in the knowledge base 
+D) It evaluates the accuracy of the generated responses 
+Answer: 
+ 
+11. What is the primary function of the Knowledge Base in a RAG system? 
+A) To store user queries for future reference 
+B) To maintain external information for retrieval during response generation 
+C) To train the language model on new data 
+D) To evaluate the performance of the RAG system 
+Answer: 
+ 
+12. Which of the following is an example of a pre-retrieval technique in advanced RAG 
+systems? 
+A) Response Generation 
+B) Query Optimization 
+C) Embedding Creation 
+D) Data Loading 
+Answer: 
+13. In RAG, what is the purpose of the Re-ranking process? 
+A) To train the language model with ranked data 
+B) To order retrieved documents based on relevance before augmentation 
+C) To evaluate the performance of the retrieval system 
+D) To generate responses in a ranked order 
+Answer:  
+ 
+14. What is the main benefit of combining both dense and sparse retrieval in a Hybrid 
+RAG system? 
+A) Faster response generation 
+B) Improved model interpretability 
+C) Better coverage and relevance in retrieved results 
+D) Elimination of the need for a knowledge base 
+Answer:  
+15. What is the role of embeddings in the Indexing Pipeline? 
+A) To convert raw data into human-readable format 
+B) To store responses in a searchable format 
+C) To represent documents as vectors for efficient similarity search 
+D) To train the language model on new data 
+Answer:  
+

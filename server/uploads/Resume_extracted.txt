@@ -1,0 +1,165 @@
+Amit Meena
+Email: Amitjf111@gmail.com
+Linkedin
+Mobile:
++91-91663 14168
+Summary
+• AI-Driven Software Developer with a strong background in building innovative solutions
+using modern technologies. Proficient in MERN stack, Python, and Generative AI, with
+hands-on experience in cloud services to deliver scalable and efficient applications.
+Experience
+• Datalabs Ai
+Hyderabad, TS
+AI Software Developer
+July 2024 - Present
+◦Real-time Communication Platform Created a MERN stack-based platform with live
+updates, utilizing Azure services for speech-to-text, translation, and text-to-speech
+functionalities. Collaborated with team members to optimize user experience and performance.
+◦API Automation Testing Designed and implemented an API automation testing web
+application using React and Python, leveraging OpenAI for test case generation. Collaborated
+with a team to ensure seamless integration and functionality.
+◦SQL-to-Visualization Tool Developed a tool integrating Langchain and FastAPI for
+dynamic data visualization and query refinement. Partnered with data analysts to refine
+requirements and improve usability.
+◦Voice Translation Application Contributed to the development of a real-time voice
+translation application using Twilio and Google Translate, enhancing communication across
+languages.
+◦Predictive Modeling Created a predictive model for insurance pricing, considering various
+customer factors. Collaborated with stakeholders to align model outputs with business needs.
+◦Data Visualization Implemented 2D and 3D visualizations and K-means clustering for data
+analysis. Worked with a team to present findings and insights effectively.
+Projects
+• Mathematical model for computer virus transmission — IIT Roorkee : Analyzed and
+compared the model of virus transmission in the human body to that in a computer/network.
+Evaluated and incorporated the mathematical model for antivirus components (SAIR Model).
+• Euler Maruyama Method with Parallel Computing — IIT Roorkee : Implemented the
+method for protein kinetics and population dynamics, utilizing parallel computing for efficient and
+faster computations, leading to improved performance and accuracy in the analysis.
+Education
+• Indian Institute of Technology Roorkee (IIT Roorkee)
+Roorkee, UK
+Integrated MSc Applied Mathematics
+July 2017 - May 2022
+Technical Skills
+• Programming Languages : Python, SQL,Javascript
+• Software Development and Data Science : Data Structures and Algorithms
+(DSA),React,Node,Express, Data Analytics, Predictive Analytics, Natural language processing
+(NLP), Deep learning, Unsupervised and supervised techniques, Statistical analysis, Data
+Visualization, Pandas, Scikit-learn, PyTorch, OpenAI, Large Language Models (LLM), Langchain,
+Streamlit, Azure, FastAPI, Twilio API
+• Development Tools : Jupyter Notebook, MongoDB, Git, Colab, PyCharm, VS Code, Postman,
+MySQL, Tableau, Firebase
+Extra Curriculars
+• Member — Football Team, IIT Roorkee
+◦Participated in the college football team, competing in Inter-Bhawan Tournaments.
+
+Amit Meena
+Email: Amitjf111@gmail.com
+Linkedin
+Mobile:
++91-91663 14168
+Summary
+• AI-Driven Software Developer with a strong background in building innovative solutions
+using modern technologies. Proficient in MERN stack, Python, and Generative AI, with
+hands-on experience in cloud services to deliver scalable and efficient applications.
+Experience
+• Datalabs Ai
+Hyderabad, TS
+AI Software Developer
+July 2024 - Present
+◦Real-time Communication Platform Created a MERN stack-based platform with live
+updates, utilizing Azure services for speech-to-text, translation, and text-to-speech
+functionalities. Collaborated with team members to optimize user experience and performance.
+◦API Automation Testing Designed and implemented an API automation testing web
+application using React and Python, leveraging OpenAI for test case generation. Collaborated
+with a team to ensure seamless integration and functionality.
+◦SQL-to-Visualization Tool Developed a tool integrating Langchain and FastAPI for
+dynamic data visualization and query refinement. Partnered with data analysts to refine
+requirements and improve usability.
+◦Voice Translation Application Contributed to the development of a real-time voice
+translation application using Twilio and Google Translate, enhancing communication across
+languages.
+◦Predictive Modeling Created a predictive model for insurance pricing, considering various
+customer factors. Collaborated with stakeholders to align model outputs with business needs.
+◦Data Visualization Implemented 2D and 3D visualizations and K-means clustering for data
+analysis. Worked with a team to present findings and insights effectively.
+Projects
+• Mathematical model for computer virus transmission — IIT Roorkee : Analyzed and
+compared the model of virus transmission in the human body to that in a computer/network.
+Evaluated and incorporated the mathematical model for antivirus components (SAIR Model).
+• Euler Maruyama Method with Parallel Computing — IIT Roorkee : Implemented the
+method for protein kinetics and population dynamics, utilizing parallel computing for efficient and
+faster computations, leading to improved performance and accuracy in the analysis.
+Education
+• Indian Institute of Technology Roorkee (IIT Roorkee)
+Roorkee, UK
+Integrated MSc Applied Mathematics
+July 2017 - May 2022
+Technical Skills
+• Programming Languages : Python, SQL,Javascript
+• Software Development and Data Science : Data Structures and Algorithms
+(DSA),React,Node,Express, Data Analytics, Predictive Analytics, Natural language processing
+(NLP), Deep learning, Unsupervised and supervised techniques, Statistical analysis, Data
+Visualization, Pandas, Scikit-learn, PyTorch, OpenAI, Large Language Models (LLM), Langchain,
+Streamlit, Azure, FastAPI, Twilio API
+• Development Tools : Jupyter Notebook, MongoDB, Git, Colab, PyCharm, VS Code, Postman,
+MySQL, Tableau, Firebase
+Extra Curriculars
+• Member — Football Team, IIT Roorkee
+◦Participated in the college football team, competing in Inter-Bhawan Tournaments.
+
+Amit Meena
+Email: Amitjf111@gmail.com
+Linkedin
+Mobile:
++91-91663 14168
+Summary
+• AI-Driven Software Developer with a strong background in building innovative solutions
+using modern technologies. Proficient in MERN stack, Python, and Generative AI, with
+hands-on experience in cloud services to deliver scalable and efficient applications.
+Experience
+• Datalabs Ai
+Hyderabad, TS
+AI Software Developer
+July 2024 - Present
+◦Real-time Communication Platform Created a MERN stack-based platform with live
+updates, utilizing Azure services for speech-to-text, translation, and text-to-speech
+functionalities. Collaborated with team members to optimize user experience and performance.
+◦API Automation Testing Designed and implemented an API automation testing web
+application using React and Python, leveraging OpenAI for test case generation. Collaborated
+with a team to ensure seamless integration and functionality.
+◦SQL-to-Visualization Tool Developed a tool integrating Langchain and FastAPI for
+dynamic data visualization and query refinement. Partnered with data analysts to refine
+requirements and improve usability.
+◦Voice Translation Application Contributed to the development of a real-time voice
+translation application using Twilio and Google Translate, enhancing communication across
+languages.
+◦Predictive Modeling Created a predictive model for insurance pricing, considering various
+customer factors. Collaborated with stakeholders to align model outputs with business needs.
+◦Data Visualization Implemented 2D and 3D visualizations and K-means clustering for data
+analysis. Worked with a team to present findings and insights effectively.
+Projects
+• Mathematical model for computer virus transmission — IIT Roorkee : Analyzed and
+compared the model of virus transmission in the human body to that in a computer/network.
+Evaluated and incorporated the mathematical model for antivirus components (SAIR Model).
+• Euler Maruyama Method with Parallel Computing — IIT Roorkee : Implemented the
+method for protein kinetics and population dynamics, utilizing parallel computing for efficient and
+faster computations, leading to improved performance and accuracy in the analysis.
+Education
+• Indian Institute of Technology Roorkee (IIT Roorkee)
+Roorkee, UK
+Integrated MSc Applied Mathematics
+July 2017 - May 2022
+Technical Skills
+• Programming Languages : Python, SQL,Javascript
+• Software Development and Data Science : Data Structures and Algorithms
+(DSA),React,Node,Express, Data Analytics, Predictive Analytics, Natural language processing
+(NLP), Deep learning, Unsupervised and supervised techniques, Statistical analysis, Data
+Visualization, Pandas, Scikit-learn, PyTorch, OpenAI, Large Language Models (LLM), Langchain,
+Streamlit, Azure, FastAPI, Twilio API
+• Development Tools : Jupyter Notebook, MongoDB, Git, Colab, PyCharm, VS Code, Postman,
+MySQL, Tableau, Firebase
+Extra Curriculars
+• Member — Football Team, IIT Roorkee
+◦Participated in the college football team, competing in Inter-Bhawan Tournaments.
+

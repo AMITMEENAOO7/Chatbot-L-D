@@ -1,0 +1,621 @@
+Learn to Build Machine Learning Systems That
+Don't Suck
+A live, interactive program that'll show you how to design, build, and deploy production-ready
+systems from scratch — without the fluff.
+This program is for builders looking to solve real-world problems
+using AI/ML.
+Most Machine Learning courses are boring, too academic, and never talk about how
+to ship actual products.
+This program is different. This is a practical, no-nonsense, hands-on program that
+will teach you the skills you need for building production systems in weeks, not
+months.
+You'll walk away from this program having designed, built, and deployed an end-to-
+end Machine Learning system, plus a proven playbook for selling, planning, and
+delivering world-class work backed by 30 years of real-world experience.
+This is the class I wish I had taken when I started.
+$500$300
+Next cohort: May 5 - 22, 2025
+"This is the best machine learning course I've
+done. Worth every cent."
+— Jose Reyes, AI/ML at Cevo Australia
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+1/9
+Enroll today and you'll get free, lifetime access to every
+future cohort. You'll never pay another cent, ever.
+Enroll now
+Already a member? Sign in
+WITH FORMER STUDENTS FROM
+What Will You Learn?
+This is a live, hands-on program that focuses on real-world Machine
+Learning.
+This program is a world apart from any of those courses you've taken before:
+You'll join 20+ hours of live, interactive sessions where you'll learn how to
+build production-ready Machine Learning systems.
+You'll discover best practices for building, evaluating, running, monitoring,
+and maintaining systems in production.
+You'll get hands-on access and a complete walkthrough of an end-to-end
+Machine Learning system built entirely from scratch.
+You'll learn how to build systems once and deploy them anywhere using
+state-of-the-art techniques and open-source tools.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+2/9
+You'll enjoy lifetime access to every future cohort and a private community
+where you can collaborate with thousands of students like you.
+This program will completely change the way you think about Machine Learning.
+You'll ditch the typical classroom fluff in favor of practical strategies that actually
+work.
+Day 1 - How To Start (Almost) Any Project
+In this session, you'll learn how to pitch, sell, structure, and launch a new Machine
+Learning project. You'll find out how to frame complex problems in ways that set
+you up for successful solutions. Then, you'll cover how to run a discovery phase,
+address selection bias, manage data collection and labeling, and build an initial
+prototype.
+Day 2 - How To Build A Model (That Works)
+In this session, you'll explore data cleaning and feature engineering, and learn
+how to preprocess data using vectorization, normalization, and imputation. Next,
+you'll cover strategies for selecting the best model for your problem and discuss
+how to iteratively build an end-to-end training pipeline. Finally, you'll walk through
+distributed training so you can scale your models with data and model
+parallelism.
+Day 3 - How To Ensure Models Aren't Lying to Us
+In this session, you'll explore different evaluation strategies, such as cross-
+validation, LLM-as-a-judge, backtesting, invariance, and behavioral testing.
+Next, you'll see how to frame evaluation metrics in the context of business goals,
+ensuring your models work in real-world scenarios. Finally, you'll learn to prevent
+data leakages, perform error analysis, and handle imbalanced data.
+Day 4 - How To Serve Model Predictions (In A Clever Way)
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+3/9
+In this session, you'll explore how to version and deploy models while dealing with
+key trade-offs and operational considerations. Next, you'll examine different
+strategies for serving predictions, including human-in-the-loop and cost-
+sensitive workflows. Finally, you'll learn about pruning, quantization, knowledge
+distillation, and Low-Rank Adaptation (LoRA) to compress and optimize models
+for real-world applications.
+Day 5 - How To Monitor A Model (Drift Is Awful)
+In this session, you'll learn how to handle edge cases and outliers, address
+feedback loops, and detect and understand distribution shifts like covariate shift,
+label shift, and concept drift. Next, you'll see how to use adversarial validation
+and explore practical strategies for monitoring models in production. Finally, you'll
+explore different techniques to build resilient models that adapt to distribution
+shifts.
+Day 6 - How To Build Continual Learning Systems
+In this session, you'll learn how to dynamically extend the capabilities of your
+model using the Model Context Protocol (MCP) and how to automate the entire
+process of building, deploying, and maintaining a model in production to create
+systems that learn and improve over time. You'll explore incremental training
+techniques, how to avoid catastrophic forgetting and different methods for
+retraining your models. Finally, you'll see how to test models in production using
+A/B testing, canary releases, shadow deployments, and interleaving
+experiments.
+Code walkthroughs
+You'll get access to an end-to-end, production-ready template system for training,
+evaluating, deploying, and monitoring machine learning models.
+The codebase comes with extensive documentation to help you understand how
+the code works and how you could change it to accommodate your needs.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+4/9
+Office Hours
+Every week, we'll meet during office hours to answer any open questions, discuss
+relevant topics, and help you with any challenges you may be facing. This is also a
+great opportunity to connect with other students in your cohort, share insights, and
+talk about anything you are building or are passionate about.
+"I have learned a ton from Santiago in his class and it was actually what helped inspire me
+and get into the MLOps work that I'm doing now. Truly one of the most helpful online courses
+for doing real, full-scale machine learning."
+Brian H. Hough
+Software Engineer
+Who Is This Program For?
+This is hands-on program for people willing to put in the work to
+build skills with real-world impact.
+This program is for software engineers, data scientists, data engineers, data
+analysts, machine learning engineers, technical managers, and anyone who
+wants to use Machine Learning and Artificial Intelligence to solve real-world
+problems.
+Here are the prerequisites to succeed in the program:
+You are not afraid of writing code. We'll use Python, but you'll be fine if you
+have experience with any other language.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+5/9
+You are familiar with basic machine learning terminology, like model training,
+evaluation metrics, and model inference. You don't have to be an expert, but
+this won't be an introductory class.
+You have a basic understanding of cloud services and how to build and
+deploy a simple API. Familiarity with Docker and containerization is not
+required but a helpful skill to have.
+You are ready to put in the work and commit the time necessary to succeed.
+"This is an awesome course! This is my second round and I continue learning. I recommend it
+with complete confidence."
+Juan Olano
+Machine Learning Engineer
+Upcoming Cohorts
+Each iteration of the cohort consists of six live sessions plus office
+hours over three weeks.
+Live sessions take place every Monday and Thursday. Office hours take place on
+Wednesdays. Every session is recorded. You can attend live or watch the recorded
+version later.
+Here are the upcoming cohorts:
+Cohort 18: May 5 - May 22, 2025. 2:00 PM EDT
+Cohort 19: August 4 - August 21, 2025. 10:00 AM EDT
+Cohort 20: November 3 - November 20, 2025. 2:00 PM EST
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+6/9
+Do not wait for a specific cohort to join the program. You have lifetime access, so
+you can join any time to lock in the current price.
+"This is one of the best classes I've ever purchased over the internet. Santiago is a terrific
+teacher. The ability he has to share knowledge is fantastic. I recommend this course. Worth
+10x what he's charging."
+Sal DiStefano
+Frequently Asked Questions
+If you can't find the answer to your question, please reach out and I'll
+be happy to help.
+How long will it take to complete the program?
+Set aside a minimum of 4 hours every week during the three weeks of the program
+to attend the live sessions or watch the recordings. You'll need an additional 2 - 4
+hours if you plan to go through the codebase.
+What happens if I can't attend a live session?
+Every live session is recorded. If you can't attend a live session, you can catch up
+asynchronously later using the recording.
+I'm a complete beginner. Will this program be helpful for me?
+This program is not an introduction to machine learning.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+7/9
+While we'll discuss many fundamental ideas behind machine learning, beginners
+will find the sessions go much faster than what's optimal for them.
+What does "lifetime access" mean?
+You only pay once to join the program and get immediate access to every past,
+present, and future cohort.
+Every new iteration of the program is better than the ones before. Many students
+take classes once and then join a later cohort to benefit from the updates.
+The lifetime access removes any pressure from having to complete the program
+when life gets in the way.
+Hey! I'm Santiago.
+I'm the instructor of the program.
+I'm a machine learning engineer with three decades of experience
+building and scaling enterprise software and machine learning systems.
+From 2009 to 2023, I had the privilege of building systems for
+companies like Disney, Boston Dynamics, IBM, Dell, G4S, Anheuser-
+Busch, HP, and NextEra Energy, among others. Across these projects, I
+learned what it takes to build reliable and scalable software that works.
+I started this program in March 2023, and since then, thousands of
+students have successfully graduated.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+8/9
+I can't wait to see you in class!
+Copyright © 2025 Tideily LLC.
+All rights reserved.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+9/9
+
+Learn to Build Machine Learning Systems That
+Don't Suck
+A live, interactive program that'll show you how to design, build, and deploy production-ready
+systems from scratch — without the fluff.
+This program is for builders looking to solve real-world problems
+using AI/ML.
+Most Machine Learning courses are boring, too academic, and never talk about how
+to ship actual products.
+This program is different. This is a practical, no-nonsense, hands-on program that
+will teach you the skills you need for building production systems in weeks, not
+months.
+You'll walk away from this program having designed, built, and deployed an end-to-
+end Machine Learning system, plus a proven playbook for selling, planning, and
+delivering world-class work backed by 30 years of real-world experience.
+This is the class I wish I had taken when I started.
+$500$300
+Next cohort: May 5 - 22, 2025
+"This is the best machine learning course I've
+done. Worth every cent."
+— Jose Reyes, AI/ML at Cevo Australia
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+1/9
+Enroll today and you'll get free, lifetime access to every
+future cohort. You'll never pay another cent, ever.
+Enroll now
+Already a member? Sign in
+WITH FORMER STUDENTS FROM
+What Will You Learn?
+This is a live, hands-on program that focuses on real-world Machine
+Learning.
+This program is a world apart from any of those courses you've taken before:
+You'll join 20+ hours of live, interactive sessions where you'll learn how to
+build production-ready Machine Learning systems.
+You'll discover best practices for building, evaluating, running, monitoring,
+and maintaining systems in production.
+You'll get hands-on access and a complete walkthrough of an end-to-end
+Machine Learning system built entirely from scratch.
+You'll learn how to build systems once and deploy them anywhere using
+state-of-the-art techniques and open-source tools.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+2/9
+You'll enjoy lifetime access to every future cohort and a private community
+where you can collaborate with thousands of students like you.
+This program will completely change the way you think about Machine Learning.
+You'll ditch the typical classroom fluff in favor of practical strategies that actually
+work.
+Day 1 - How To Start (Almost) Any Project
+In this session, you'll learn how to pitch, sell, structure, and launch a new Machine
+Learning project. You'll find out how to frame complex problems in ways that set
+you up for successful solutions. Then, you'll cover how to run a discovery phase,
+address selection bias, manage data collection and labeling, and build an initial
+prototype.
+Day 2 - How To Build A Model (That Works)
+In this session, you'll explore data cleaning and feature engineering, and learn
+how to preprocess data using vectorization, normalization, and imputation. Next,
+you'll cover strategies for selecting the best model for your problem and discuss
+how to iteratively build an end-to-end training pipeline. Finally, you'll walk through
+distributed training so you can scale your models with data and model
+parallelism.
+Day 3 - How To Ensure Models Aren't Lying to Us
+In this session, you'll explore different evaluation strategies, such as cross-
+validation, LLM-as-a-judge, backtesting, invariance, and behavioral testing.
+Next, you'll see how to frame evaluation metrics in the context of business goals,
+ensuring your models work in real-world scenarios. Finally, you'll learn to prevent
+data leakages, perform error analysis, and handle imbalanced data.
+Day 4 - How To Serve Model Predictions (In A Clever Way)
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+3/9
+In this session, you'll explore how to version and deploy models while dealing with
+key trade-offs and operational considerations. Next, you'll examine different
+strategies for serving predictions, including human-in-the-loop and cost-
+sensitive workflows. Finally, you'll learn about pruning, quantization, knowledge
+distillation, and Low-Rank Adaptation (LoRA) to compress and optimize models
+for real-world applications.
+Day 5 - How To Monitor A Model (Drift Is Awful)
+In this session, you'll learn how to handle edge cases and outliers, address
+feedback loops, and detect and understand distribution shifts like covariate shift,
+label shift, and concept drift. Next, you'll see how to use adversarial validation
+and explore practical strategies for monitoring models in production. Finally, you'll
+explore different techniques to build resilient models that adapt to distribution
+shifts.
+Day 6 - How To Build Continual Learning Systems
+In this session, you'll learn how to dynamically extend the capabilities of your
+model using the Model Context Protocol (MCP) and how to automate the entire
+process of building, deploying, and maintaining a model in production to create
+systems that learn and improve over time. You'll explore incremental training
+techniques, how to avoid catastrophic forgetting and different methods for
+retraining your models. Finally, you'll see how to test models in production using
+A/B testing, canary releases, shadow deployments, and interleaving
+experiments.
+Code walkthroughs
+You'll get access to an end-to-end, production-ready template system for training,
+evaluating, deploying, and monitoring machine learning models.
+The codebase comes with extensive documentation to help you understand how
+the code works and how you could change it to accommodate your needs.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+4/9
+Office Hours
+Every week, we'll meet during office hours to answer any open questions, discuss
+relevant topics, and help you with any challenges you may be facing. This is also a
+great opportunity to connect with other students in your cohort, share insights, and
+talk about anything you are building or are passionate about.
+"I have learned a ton from Santiago in his class and it was actually what helped inspire me
+and get into the MLOps work that I'm doing now. Truly one of the most helpful online courses
+for doing real, full-scale machine learning."
+Brian H. Hough
+Software Engineer
+Who Is This Program For?
+This is hands-on program for people willing to put in the work to
+build skills with real-world impact.
+This program is for software engineers, data scientists, data engineers, data
+analysts, machine learning engineers, technical managers, and anyone who
+wants to use Machine Learning and Artificial Intelligence to solve real-world
+problems.
+Here are the prerequisites to succeed in the program:
+You are not afraid of writing code. We'll use Python, but you'll be fine if you
+have experience with any other language.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+5/9
+You are familiar with basic machine learning terminology, like model training,
+evaluation metrics, and model inference. You don't have to be an expert, but
+this won't be an introductory class.
+You have a basic understanding of cloud services and how to build and
+deploy a simple API. Familiarity with Docker and containerization is not
+required but a helpful skill to have.
+You are ready to put in the work and commit the time necessary to succeed.
+"This is an awesome course! This is my second round and I continue learning. I recommend it
+with complete confidence."
+Juan Olano
+Machine Learning Engineer
+Upcoming Cohorts
+Each iteration of the cohort consists of six live sessions plus office
+hours over three weeks.
+Live sessions take place every Monday and Thursday. Office hours take place on
+Wednesdays. Every session is recorded. You can attend live or watch the recorded
+version later.
+Here are the upcoming cohorts:
+Cohort 18: May 5 - May 22, 2025. 2:00 PM EDT
+Cohort 19: August 4 - August 21, 2025. 10:00 AM EDT
+Cohort 20: November 3 - November 20, 2025. 2:00 PM EST
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+6/9
+Do not wait for a specific cohort to join the program. You have lifetime access, so
+you can join any time to lock in the current price.
+"This is one of the best classes I've ever purchased over the internet. Santiago is a terrific
+teacher. The ability he has to share knowledge is fantastic. I recommend this course. Worth
+10x what he's charging."
+Sal DiStefano
+Frequently Asked Questions
+If you can't find the answer to your question, please reach out and I'll
+be happy to help.
+How long will it take to complete the program?
+Set aside a minimum of 4 hours every week during the three weeks of the program
+to attend the live sessions or watch the recordings. You'll need an additional 2 - 4
+hours if you plan to go through the codebase.
+What happens if I can't attend a live session?
+Every live session is recorded. If you can't attend a live session, you can catch up
+asynchronously later using the recording.
+I'm a complete beginner. Will this program be helpful for me?
+This program is not an introduction to machine learning.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+7/9
+While we'll discuss many fundamental ideas behind machine learning, beginners
+will find the sessions go much faster than what's optimal for them.
+What does "lifetime access" mean?
+You only pay once to join the program and get immediate access to every past,
+present, and future cohort.
+Every new iteration of the program is better than the ones before. Many students
+take classes once and then join a later cohort to benefit from the updates.
+The lifetime access removes any pressure from having to complete the program
+when life gets in the way.
+Hey! I'm Santiago.
+I'm the instructor of the program.
+I'm a machine learning engineer with three decades of experience
+building and scaling enterprise software and machine learning systems.
+From 2009 to 2023, I had the privilege of building systems for
+companies like Disney, Boston Dynamics, IBM, Dell, G4S, Anheuser-
+Busch, HP, and NextEra Energy, among others. Across these projects, I
+learned what it takes to build reliable and scalable software that works.
+I started this program in March 2023, and since then, thousands of
+students have successfully graduated.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+8/9
+I can't wait to see you in class!
+Copyright © 2025 Tideily LLC.
+All rights reserved.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+9/9
+
+Learn to Build Machine Learning Systems That
+Don't Suck
+A live, interactive program that'll show you how to design, build, and deploy production-ready
+systems from scratch — without the fluff.
+This program is for builders looking to solve real-world problems
+using AI/ML.
+Most Machine Learning courses are boring, too academic, and never talk about how
+to ship actual products.
+This program is different. This is a practical, no-nonsense, hands-on program that
+will teach you the skills you need for building production systems in weeks, not
+months.
+You'll walk away from this program having designed, built, and deployed an end-to-
+end Machine Learning system, plus a proven playbook for selling, planning, and
+delivering world-class work backed by 30 years of real-world experience.
+This is the class I wish I had taken when I started.
+$500$300
+Next cohort: May 5 - 22, 2025
+"This is the best machine learning course I've
+done. Worth every cent."
+— Jose Reyes, AI/ML at Cevo Australia
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+1/9
+Enroll today and you'll get free, lifetime access to every
+future cohort. You'll never pay another cent, ever.
+Enroll now
+Already a member? Sign in
+WITH FORMER STUDENTS FROM
+What Will You Learn?
+This is a live, hands-on program that focuses on real-world Machine
+Learning.
+This program is a world apart from any of those courses you've taken before:
+You'll join 20+ hours of live, interactive sessions where you'll learn how to
+build production-ready Machine Learning systems.
+You'll discover best practices for building, evaluating, running, monitoring,
+and maintaining systems in production.
+You'll get hands-on access and a complete walkthrough of an end-to-end
+Machine Learning system built entirely from scratch.
+You'll learn how to build systems once and deploy them anywhere using
+state-of-the-art techniques and open-source tools.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+2/9
+You'll enjoy lifetime access to every future cohort and a private community
+where you can collaborate with thousands of students like you.
+This program will completely change the way you think about Machine Learning.
+You'll ditch the typical classroom fluff in favor of practical strategies that actually
+work.
+Day 1 - How To Start (Almost) Any Project
+In this session, you'll learn how to pitch, sell, structure, and launch a new Machine
+Learning project. You'll find out how to frame complex problems in ways that set
+you up for successful solutions. Then, you'll cover how to run a discovery phase,
+address selection bias, manage data collection and labeling, and build an initial
+prototype.
+Day 2 - How To Build A Model (That Works)
+In this session, you'll explore data cleaning and feature engineering, and learn
+how to preprocess data using vectorization, normalization, and imputation. Next,
+you'll cover strategies for selecting the best model for your problem and discuss
+how to iteratively build an end-to-end training pipeline. Finally, you'll walk through
+distributed training so you can scale your models with data and model
+parallelism.
+Day 3 - How To Ensure Models Aren't Lying to Us
+In this session, you'll explore different evaluation strategies, such as cross-
+validation, LLM-as-a-judge, backtesting, invariance, and behavioral testing.
+Next, you'll see how to frame evaluation metrics in the context of business goals,
+ensuring your models work in real-world scenarios. Finally, you'll learn to prevent
+data leakages, perform error analysis, and handle imbalanced data.
+Day 4 - How To Serve Model Predictions (In A Clever Way)
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+3/9
+In this session, you'll explore how to version and deploy models while dealing with
+key trade-offs and operational considerations. Next, you'll examine different
+strategies for serving predictions, including human-in-the-loop and cost-
+sensitive workflows. Finally, you'll learn about pruning, quantization, knowledge
+distillation, and Low-Rank Adaptation (LoRA) to compress and optimize models
+for real-world applications.
+Day 5 - How To Monitor A Model (Drift Is Awful)
+In this session, you'll learn how to handle edge cases and outliers, address
+feedback loops, and detect and understand distribution shifts like covariate shift,
+label shift, and concept drift. Next, you'll see how to use adversarial validation
+and explore practical strategies for monitoring models in production. Finally, you'll
+explore different techniques to build resilient models that adapt to distribution
+shifts.
+Day 6 - How To Build Continual Learning Systems
+In this session, you'll learn how to dynamically extend the capabilities of your
+model using the Model Context Protocol (MCP) and how to automate the entire
+process of building, deploying, and maintaining a model in production to create
+systems that learn and improve over time. You'll explore incremental training
+techniques, how to avoid catastrophic forgetting and different methods for
+retraining your models. Finally, you'll see how to test models in production using
+A/B testing, canary releases, shadow deployments, and interleaving
+experiments.
+Code walkthroughs
+You'll get access to an end-to-end, production-ready template system for training,
+evaluating, deploying, and monitoring machine learning models.
+The codebase comes with extensive documentation to help you understand how
+the code works and how you could change it to accommodate your needs.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+4/9
+Office Hours
+Every week, we'll meet during office hours to answer any open questions, discuss
+relevant topics, and help you with any challenges you may be facing. This is also a
+great opportunity to connect with other students in your cohort, share insights, and
+talk about anything you are building or are passionate about.
+"I have learned a ton from Santiago in his class and it was actually what helped inspire me
+and get into the MLOps work that I'm doing now. Truly one of the most helpful online courses
+for doing real, full-scale machine learning."
+Brian H. Hough
+Software Engineer
+Who Is This Program For?
+This is hands-on program for people willing to put in the work to
+build skills with real-world impact.
+This program is for software engineers, data scientists, data engineers, data
+analysts, machine learning engineers, technical managers, and anyone who
+wants to use Machine Learning and Artificial Intelligence to solve real-world
+problems.
+Here are the prerequisites to succeed in the program:
+You are not afraid of writing code. We'll use Python, but you'll be fine if you
+have experience with any other language.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+5/9
+You are familiar with basic machine learning terminology, like model training,
+evaluation metrics, and model inference. You don't have to be an expert, but
+this won't be an introductory class.
+You have a basic understanding of cloud services and how to build and
+deploy a simple API. Familiarity with Docker and containerization is not
+required but a helpful skill to have.
+You are ready to put in the work and commit the time necessary to succeed.
+"This is an awesome course! This is my second round and I continue learning. I recommend it
+with complete confidence."
+Juan Olano
+Machine Learning Engineer
+Upcoming Cohorts
+Each iteration of the cohort consists of six live sessions plus office
+hours over three weeks.
+Live sessions take place every Monday and Thursday. Office hours take place on
+Wednesdays. Every session is recorded. You can attend live or watch the recorded
+version later.
+Here are the upcoming cohorts:
+Cohort 18: May 5 - May 22, 2025. 2:00 PM EDT
+Cohort 19: August 4 - August 21, 2025. 10:00 AM EDT
+Cohort 20: November 3 - November 20, 2025. 2:00 PM EST
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+6/9
+Do not wait for a specific cohort to join the program. You have lifetime access, so
+you can join any time to lock in the current price.
+"This is one of the best classes I've ever purchased over the internet. Santiago is a terrific
+teacher. The ability he has to share knowledge is fantastic. I recommend this course. Worth
+10x what he's charging."
+Sal DiStefano
+Frequently Asked Questions
+If you can't find the answer to your question, please reach out and I'll
+be happy to help.
+How long will it take to complete the program?
+Set aside a minimum of 4 hours every week during the three weeks of the program
+to attend the live sessions or watch the recordings. You'll need an additional 2 - 4
+hours if you plan to go through the codebase.
+What happens if I can't attend a live session?
+Every live session is recorded. If you can't attend a live session, you can catch up
+asynchronously later using the recording.
+I'm a complete beginner. Will this program be helpful for me?
+This program is not an introduction to machine learning.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+7/9
+While we'll discuss many fundamental ideas behind machine learning, beginners
+will find the sessions go much faster than what's optimal for them.
+What does "lifetime access" mean?
+You only pay once to join the program and get immediate access to every past,
+present, and future cohort.
+Every new iteration of the program is better than the ones before. Many students
+take classes once and then join a later cohort to benefit from the updates.
+The lifetime access removes any pressure from having to complete the program
+when life gets in the way.
+Hey! I'm Santiago.
+I'm the instructor of the program.
+I'm a machine learning engineer with three decades of experience
+building and scaling enterprise software and machine learning systems.
+From 2009 to 2023, I had the privilege of building systems for
+companies like Disney, Boston Dynamics, IBM, Dell, G4S, Anheuser-
+Busch, HP, and NextEra Energy, among others. Across these projects, I
+learned what it takes to build reliable and scalable software that works.
+I started this program in March 2023, and since then, thousands of
+students have successfully graduated.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+8/9
+I can't wait to see you in class!
+Copyright © 2025 Tideily LLC.
+All rights reserved.
+23/04/2025, 15:56
+Building Machine Learning Systems That Don't Suck
+https://www.ml.school
+9/9
+

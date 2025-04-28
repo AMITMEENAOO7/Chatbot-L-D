@@ -1,0 +1,347 @@
+GENERATIVE AI FOR EVERYONE 
+AI is already pervasive in our lives. 
+AI Technology 
+Examples 
+Web Search 
+Google, Bing 
+Fraud detection 
+Credit card payments 
+Recommender system 
+Amazon, Netflix 
+                                                                
+ 
+SUPERVISED LEARNING (labeling things):  
+Generative AI is build using supervised learning 
+Input A -> Output B 
+ 
+ 
+Generating text using Large Language Models: - 
+LLMs are built using supervised learning (A->B) to repeatedly predict the next word. 
+ 
+When we train a very large AI system on a lot of data (hundreds of billions of words), we get 
+a Large Language Model like ChatGPT. 
+Generative AI, built on supervised learning, works by predicting the next word in a 
+sentence. LLMs are trained on massive datasets (hundreds of billions to trillions of words) 
+to generate coherent text based on a given prompt. While technical details like instruction-
+following and safety measures are covered later, this core mechanism enables LLMs to 
+assist with writing, information retrieval, and problem-solving. 
+LLM as a Though Partner: - 
+A new way to find information. 
+ChatGPT response for questions: - 
+ 
+LLM can sometimes make facts up. We call this hallucination. If you're really relying on 
+getting the right answer to the question, it may be useful to double check the answer with 
+an authoritative source before counting on it. 
+LLM is also used as Writing partner. 
+Ex: - 
+ 
+Web Search or using an LLM? 
+Healthcare Information: 
+• If you sprain your ankle and need medical advice, a web search can direct you to 
+trusted sources like the Mayo Clinic or Harvard Health, which offer authoritative, 
+evidence-based guidance. 
+• An LLM can generate an answer, but because LLMs sometimes "hallucinate" (i.e., 
+make up information), their medical advice should always be double-checked 
+against reputable sources. 
+Finding a Recipe: 
+• For a common recipe like pineapple pie, a web search will provide recipes from 
+well-known chefs or trusted cooking websites, ensuring reliable and tested results. 
+• An LLM can generate a recipe, but it might not be as refined or reliable as those 
+found on trusted cooking websites. 
+ 
+Creative or Unique Requests: 
+• If you need a recipe for something uncommon, like a coffee-infused pineapple pie, 
+a web search may not be helpful since there may not be existing recipes online. 
+• In this case, an LLM can be useful as a "thought partner," generating creative ideas 
+and helping you brainstorm how to make such a dish, even if no prior recipe exists. 
+ 
+NOTE: - 
+• Use web search for factual, authoritative, and widely available information (e.g., 
+medical advice, well-known recipes). 
+• Use LLMs when looking for creative assistance, brainstorming ideas, or generating 
+responses in areas with little to no existing content (e.g., new recipes, unique 
+problem-solving). 
+• Be cautious with critical information, especially in fields like medicine, law, or 
+finance, and verify LLM-generated responses with trusted sources 
+ 
+o AI is a general-purpose Technology 
+o Similar to electricity, AI is useful for many tasks. 
+ 
+Examples of Tasks LLMs can carry out: - 
+ 
+Key Capabilities of Generative AI 
+1. Writing Tasks 
+a. Brainstorming Companion: AI can generate creative ideas, such as naming 
+a product. 
+b. Answering Questions: AI can retrieve and summarize information, 
+especially when integrated with company-specific data. 
+2. Reading Tasks 
+a. AI can process large amounts of text and summarize key information. 
+b. Example: In customer service, AI can read emails and classify them as 
+complaints or non-complaints to help with automated email routing. 
+c. While supervised learning can also handle such classification tasks, 
+Generative AI makes implementation faster and more cost-effective. 
+3. Chatting Tasks 
+a. AI powers both general-purpose chatbots (e.g., ChatGPT, Bard, Bing Chat) 
+and specialized chatbots for specific tasks. 
+b. Example: A chatbot for food ordering can take a customer's request and 
+process the order automatically. 
+Two Types of LLM Applications 
+1. Web Interface-Based Applications 
+a. These are tasks that users can directly perform by visiting platforms like 
+ChatGPT or Bard. 
+b. Example: Brainstorming product names by directly entering prompts into an 
+AI chat tool. 
+2. Software-Based LLM Applications 
+a. These integrate AI into business workflows and automated systems rather 
+than requiring users to manually enter prompts. 
+b. Example: A system that automatically sorts customer complaint emails 
+without requiring human intervention. 
+c. Example: A chatbot that provides company-specific HR information, such 
+as parking policies, which wouldn't be available in a general AI chatbot. 
+ 
+Web-based interface applications e.g. ChatGPT, Bard, or Bing Chat 
+Software-based applications e.g. email routing, document search 
+ 
+ 
+CHAPTER 2 (Generative AI Applications) 
+ 
+WRITING 
+READING 
+CHATTING 
+What LLM can do and can't do 
+Tips for Prompting 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+FINE TUNING: - 
+Fine-tuning is a technique used to modify a pre-trained LLM by training it on a smaller 
+dataset to improve its performance in specific tasks. It is useful when: 
+1. Task is hard to define in a prompt – e.g., summarizing customer service calls in a 
+specific format or mimicking a person's writing style. 
+2. LLM needs domain-specific knowledge – e.g., understanding medical, legal, or 
+financial documents. 
+3. Using a smaller model instead of a large one – fine-tuning can make a small, 
+cheaper model perform well on specific tasks, reducing computational costs. 
+Fine-tuning is relatively inexpensive compared to pre-training a model from scratch and 
+can be an alternative or complement to Retrieval-Augmented Generation (RAG). 
+ 
+PRE-TRAINING LLM: - 
+Pretraining an LLM from scratch is extremely expensive, requiring millions of dollars, large 
+engineering teams, and vast amounts of data. It is usually an option of last resort, 
+suitable only for organizations with specialized domains and extensive proprietary data 
+(e.g., BloombergGPT for financial text). 
+For most applications, it is more practical to start with an existing pretrained LLM and 
+fine-tune it for specific needs, as this is far more cost-effective. Open-source LLMs 
+provide many options, allowing developers to build applications without the heavy expense 
+of pretraining. 
+ 
+CHOOSING A MODEL: - 
+When choosing an LLM for software applications, consider: 
+1. Model Size & Capabilities: 
+a. ~1B parameters → Good for pattern matching (e.g., sentiment analysis). 
+b. ~10B parameters → Better world knowledge & instruction following (e.g., 
+chatbots). 
+c. 100B+ parameters → Rich knowledge & complex reasoning (e.g., 
+brainstorming tools). 
+2. Open-Source vs. Closed-Source: 
+a. Closed-source: Easy to use via APIs, larger/powerful models, cost-effective, 
+but risks vendor lock-in. 
+b. Open-source: Full control, better for privacy-sensitive applications, can run 
+on your own device. 
+3. Practical Approach: 
+a. Experiment with different models to find the best fit. 
+b. Use large models when deep knowledge or reasoning is needed. 
+c. Consider privacy needs when deciding between cloud-based or local 
+deployment. 
+NOTE: - 
+❖ We can access closed source models with cloud programming interface. 
+HOW LLMs FOLLOW INSTRUCTIONS: - 
+LLMs learn to follow instructions using two key techniques: 
+1. Instruction Tuning: 
+a. Fine-tuning a pre-trained LLM on examples of good responses to prompts. 
+b. Helps the model generate meaningful answers instead of just predicting the 
+next word based on internet text. 
+2. Reinforcement Learning from Human Feedback (RLHF): 
+a. Human reviewers rate responses based on helpfulness, honesty, and 
+harmlessness (Triple H). 
+b. A supervised model learns to score responses. 
+c. The LLM is then trained to generate answers that receive higher scores, 
+improving response quality. 
+This combination enables LLMs to provide useful, safe, and instruction-following 
+responses. 
+1. How LLMs Use Tools 
+LLMs are not just text-based conversational models; they can be programmed to interact 
+with external software tools to execute real-world actions. For example, in a food-ordering 
+chatbot, when a user requests a burger, instead of just responding with "OK, it’s on the 
+way," the LLM can generate a structured command like: 
+• Order burger for user 9876 
+• Send to this address 
+• Display message: "OK, it's on the way" 
+The first two lines trigger an external system that places the order, while only the last 
+message is shown to the user. This structured output allows LLMs to interact with software 
+systems effectively. 
+Since LLMs are not completely reliable, a better implementation could include a 
+confirmation step where the user verifies the order before it is finalized, preventing costly 
+mistakes. This highlights the importance of designing AI applications responsibly. 
+2. LLMs Using Tools for Reasoning 
+LLMs are not inherently good at performing precise calculations. If asked, “How much 
+would I have after 8 years if I deposit $100 in a bank account with 5% interest?”, an 
+LLM might generate an incorrect but plausible-sounding response. Instead, a better 
+approach is to provide the LLM access to a calculator tool. 
+For instance, rather than generating an answer itself, the LLM can output: 
+"Calculate 100 × (1.05)^8" 
+This command triggers an external calculator, which computes the correct answer: 
+$147.74. The LLM can then insert this result into its response. By integrating external tools, 
+LLMs can extend their capabilities beyond language processing into accurate 
+computation, database querying, and other specialized tasks. 
+However, safeguards must be in place to ensure these tools are not misused or triggered 
+incorrectly, as automation without oversight can lead to errors. 
+3. The Emerging Concept of AI Agents 
+Going beyond simple tool usage, AI agents are an experimental area of research where 
+LLMs are used not just to trigger individual actions but to autonomously determine and 
+execute a sequence of tasks. 
+For example, if a user asks an AI agent: 
+"Help me research BetterBurger's top competitors." 
+An AI agent could break the task down into multiple steps: 
+1. Search for BetterBurger’s top competitors online. 
+2. Visit the competitors' websites. 
+3. Summarize the key information from their homepages. 
+The agent can then use different tools for each step: 
+• A web search tool to find competitors. 
+• A web scraping tool to collect data from their websites. 
+• An LLM-powered summarization tool to condense the information into a report. 
+This ability to autonomously decide and execute multi-step actions makes AI agents an 
+exciting but still developing field. While there are promising demos, this technology is not 
+yet mature for critical applications. Future advancements in AI safety and reliability could 
+make AI agents more practical and widely used. 
+ 
+ 
+ 
+ 
+ 
+GENERATIVE AI FOR BUISINESS 
+Generative AI is becoming a valuable tool across various job roles, aiding in tasks like 
+writing, brainstorming, summarizing, and coding. Marketers use it for campaign ideas, 
+recruiters for summarizing reviews, and programmers for drafting code—though human 
+oversight is crucial. As AI is a general-purpose technology, businesses can leverage it to 
+augment or automate tasks. 
+IDENTIFYING AUTOMATION OPPURTUNITIES: - 
+• Ai doesn’t automate jobs. It automates tasks. 
+• Most jobs involve collection of many tasks. 
+• Ex: - customer service agent. 
+ 
+ 
+• AUGUMENTATION VS AUTOMATION 
+ Augmentation helps humans with a task. 
+ Ex: - Recommend a response for a customer service agent to edit/ 
+approve. 
+o Automation means automatically performing a task. 
+▪ Ex: -automatically transcribe and summarize the interactions of 
+customers. 
+o For some tasks business will start with augmentation and moves towards 
+automation. 
+The potential for augmenting/automating a task depends on: 
+1. Technical Feasability 
+2. Business value. 
+ 
+TECHNICAL FEASABILITY: - 
+• An AI engineer can also help assess if RAG, fine-tuning or other techniques 
+can help. 
+• Can a fresh college graduate following the instructions in a prompt complete 
+the task? 
+• If unsure, try prompting an LLM to see if you can get to do it. 
+Business Value: - 
+• How valuable is it for AI to augment or automate the task? 
+• How much time is spent on this task? 
+• Does doing this task significantly faster, cheaper or more consistently create 
+substantial value? 
+ 
+ 
+• While automation initially seems focused on cost savings, its true potential lies in 
+driving revenue growth. Historical innovations like the steam engine and computers 
+show that businesses often shift from cutting costs to expanding opportunities. 
+Automation can enable new workflows, allowing businesses to enhance services 
+dramatically rather than just reducing expenses, leading to significant growth 
+beyond mere savings. 
+• Generative AI drives not just cost savings but also revenue growth by transforming 
+workflows. Examples include: 
+ Surgeons: AI-assisted research can reduce prep time while still requiring 
+human expertise for operations. 
+ Lawyers: AI speeds up legal document review, allowing for more efficient 
+client feedback and workflow restructuring. 
+ Marketers: AI enables rapid content creation, leading to large-scale A/B 
+testing and better campaign optimization. 
+• Beyond employee tasks, businesses can analyze customer tasks to identify AI 
+opportunities that enhance user experience and create new products or services. 
+This approach fosters innovation and business growth. 
+AI EFFECT ON JOBS 
+1. Higher-Wage Jobs Are More Affected 
+a. A study by OpenAI & University of Pennsylvania shows that higher-wage jobs 
+are more exposed to AI augmentation/automation than lower-wage ones. 
+b. Earlier automation waves impacted lower-wage, repetitive jobs, but 
+generative AI is now affecting knowledge-based roles. 
+2. Impact by Functional Role (McKinsey Study) 
+a. Customer operations (e.g., customer service) will see the largest absolute 
+financial impact (~$400B), with AI automating a huge percentage (~40%). 
+b. Sales, marketing, and software engineering will also experience large AI-
+driven changes. 
+c. Other areas like legal functions will see AI impact (~15-20% of total 
+spending), though not as high as customer service or sales. 
+3. Impact by Industry Sector 
+a. McKinsey's data shows AI-driven automation affecting industries such as 
+education, business, legal professions, and STEM fields. 
+b. Some sectors that were previously not highly automated are now seeing 
+greater AI-driven changes. 
+4. AI’s Focus on Knowledge Work 
+a. The most affected roles involve knowledge, expertise, critical thinking, 
+and interpersonal skills rather than physical tasks. 
+Key Points: 
+1. Bias in AI 
+a. AI models, trained on internet data, can inherit human biases. 
+b. Reinforcement Learning from Human Feedback (RLHF) helps reduce biases 
+by aligning AI with human preferences. 
+c. AI outputs are now safer and less biased than raw internet text, and 
+improvements continue. 
+2. Job Displacement 
+a. AI may not fully replace jobs but will augment them. 
+b. Example: Radiologists still have jobs despite AI advancements in medical 
+imaging. 
+c. "AI won’t replace radiologists, but radiologists using AI will replace those 
+who don’t." 
+d. Historically, technology has created more jobs than it has destroyed. 
+3. AI & Human Extinction 
+a. Concerns exist, but no concrete evidence supports AI wiping out humanity. 
+b. AI risks should be managed like other powerful technologies (e.g., airplanes, 
+corporations). 
+c. AI is likely to help humanity solve global challenges like climate change and 
+pandemics. 
+ 
+ 
+ 
+ 
+Artificial General Intelligence: - 
+❖ AGI refers to AI that can perform any intellectual task a human can. 
+ Examples: 
+▪ Learning to drive with 20 hours of practice (like a teenager). 
+▪ Conducting PhD-level research in a few years. 
+▪ Performing all tasks of a programmer or knowledge worker. 
+❖ Current AI is still far from achieving AGI. 
+ 
+ 
+ 
+
